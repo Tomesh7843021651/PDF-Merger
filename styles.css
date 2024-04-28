@@ -1,0 +1,65 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.custom-file-input::before {
+    content: 'Browse';
+    display: inline-block;
+    background: linear-gradient(to bottom, #007bff, #0056b3);
+    border: 1px solid #0056b3;
+    border-radius: 5px;
+    color: #fff;
+    padding: 8px 20px;
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.custom-file-input:hover::before {
+    background: linear-gradient(to bottom, #0056b3, #003c7e);
+}
+
+.custom-file-input:active::before {
+    background: linear-gradient(to bottom, #004080, #00264d);
+}
+
+.custom-file-input::after {
+    content: 'Choose PDF files...';
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.custom-file-input:focus + .custom-file-label::after {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+#mergeBtn {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+#mergeBtn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+
+
+    background-color: #218838;
+}
+
+#mergeBtn:active {
+    background-color: #1e7e34;
+}
